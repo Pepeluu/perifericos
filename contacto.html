@@ -11,6 +11,91 @@
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/css.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <script src="jquery.flip.min.js"></script>
+  <script>
+     $(document).ready(function() {  
+      $(".flip").flip({
+            trigger: 'hover'
+        });
+        $(".flip2").flip({
+        trigger: 'hover',
+        axis: 'x'
+    });
+    $("#titulo").hover(function(){
+		$("#titulo").css("font-family", "Comic Sans MS").css("font-size", "35px");
+		}, function(){
+			$("#titulo").css("font-family" ,"Arial").css("font-size" , "27px");
+		});
+
+    $(".nav-item").hover(function(){
+		$(".nav-item").css("font-family", "Arial").css("font-size", "30px");
+		}, function(){
+			$(".nav-item").css("font-family" ,"Arial").css("font-size" , "14px");
+    });
+    
+    $(".nav-item1").hover(function(){
+		$(".nav-item1").css("font-family", "Arial").css("font-size", "30px");
+		}, function(){
+			$(".nav-item1").css("font-family" ,"Arial").css("font-size" , "14px");
+    });
+    
+    $(".nav-item2").hover(function(){
+		$(".nav-item2").css("font-family", "Arial").css("font-size", "30px");
+		}, function(){
+			$(".nav-item2").css("font-family" ,"Arial").css("font-size" , "14px");
+    });
+    
+    $(".nav-item3").hover(function(){
+		$(".nav-item3").css("font-family", "Arial").css("font-size", "30px");
+		}, function(){
+			$(".nav-item3").css("font-family" ,"Arial").css("font-size" , "14px");
+    });
+    
+    $(".nav-item4").hover(function(){
+		$(".nav-item4").css("font-family", "Arial").css("font-size", "30px");
+		}, function(){
+			$(".nav-item4").css("font-family" ,"Arial").css("font-size" , "14px");
+		});
+
+    $( function() {
+    $( "#tabs" ).tabs();
+  } );
+
+  $( function() {
+    $("li").css("margin", "25px");
+  } );
+
+  $( function() {
+    $("li").css("list-style", "none");
+  } );
+
+  $(".listado1").hover(function(){
+		$(".listado1").css("font-family", "Arial").css("font-size", "30px");
+		}, function(){
+			$(".listado1").css("font-family" ,"Arial").css("font-size" , "14px");
+    });
+
+    $(".listado2").hover(function(){
+		$(".listado2").css("font-family", "Arial").css("font-size", "30px");
+		}, function(){
+			$(".listado2").css("font-family" ,"Arial").css("font-size" , "14px");
+    });
+
+    $(".listado3").hover(function(){
+		$(".listado3").css("font-family", "Arial").css("font-size", "30px");
+		}, function(){
+			$(".listado3").css("font-family" ,"Arial").css("font-size" , "14px");
+    });
+
+    $( "button" ).button();
+
+   });
+   
+  
+  </script>
 </head>
 
 <body>
@@ -20,7 +105,7 @@
         <img src="img/logo.png" id="tw" alt="tw" class="img-responsive img-thumbnail">
       </div>
       <div class="col-xs-12 col-sm-4 col-md-4" id="title">
-        <h2> TUSPERIFERICOS.COM </h2>
+        <h2 id="titulo"> TUSPERIFERICOS.COM </h2>
       </div>
       <div class="col-xs-12 col-sm-2 col-md-3" id="descripcion">
         <h5>TU WEB DE CONFIANZA DONDE ENCONTAR TODOS LOS PERIFERICOS </h5>
@@ -44,48 +129,75 @@
           <li class="nav-item">
             <a class="nav-link active " href="index.html">Inicio</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item1">
             <a class="nav-link active" href="teclados.html">Teclados</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item2">
             <a class="nav-link active" href="ratones.html">Ratones</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item3">
             <a class="nav-link active" href="monitores.html">Monitores</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item4">
             <a class="nav-link active" href="altavoces.html">Altavoces</a>
           </li>
         </ul>
       </aside>
-      <article class="col-xs-12 col-sm-4 col-md-4 ">
-        <div id="teclado">
-          <h3>¿ESTA SIENDO ESTA WEB DE TU AGRADO?</h3> <img src="img/logo.png" id="rgb" alt="altavoz"
-            class="img-responsive img-thumbnail">
-          <p id="price"> </p>
+      <div id="tabs">
+        <ul class="listado">
+          <li class="listado1"><a href="#tabs-1">INFORMACION SOBRE LA WEB</a></li>
+          <li class="listado2"><a href="#tabs-2">FORMULARIO</a></li>
+          <li class="listado3"><a href="#tabs-3">POLITICA DE PRIVACIDAD</a></li>
+        </ul>
+        <div id="tabs-1">
+          <article class="col-xs-12 col-sm-4 col-md-4 ">
+            <div id="teclado">
+              <h3>¿ESTA SIENDO ESTA WEB DE TU AGRADO?</h3> <div class="flip"> 
+                <div class="front"> 
+                    <img src="img/logo.png" alt="raton" />
+                </div> 
+                <div class="back">
+                    <h3>¡TU WEB DE CONFIANZA!</h3>
+                </div>
+              <p id="price"> </p>
+            </div>
+          </article>
         </div>
-      </article>
-      <article class="col-xs-12 col-sm-4 col-md-4 ">
-        <p>
-          <h2>
-            COMENTANOS QUE TE PARECE AQUI ABAJO
-          </h2>
-          <form>
-            <div class="form-group">
-              <label for="exampleFormControlInput1">Tu Correo Electronico</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Indicanos aqui que te pareció</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
-            </div>
-            <div class="col-auto">
-                <button type="submit" class="btn btn-primary mb-2">Enviar!</button>
-              </div>
-          </form>
-        </p>
-      </article>
-    </section>
+        <div id="tabs-2">
+          <article class="col-xs-12 col-sm-4 col-md-4 ">
+            <p>
+              <h2>
+                COMENTANOS QUE TE PARECE AQUI ABAJO
+              </h2>
+              <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Tu Correo Electronico</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Indicanos aqui que te pareció</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-2">Enviar!</button>
+                  </div>
+              </form>
+            </p>
+          </article>
+        </div>
+        <div id="tabs-3">
+          <p>
+            Jose Luis te informa sobre su Política de Privacidad respecto del tratamiento y protección de los datos de carácter personal de los usuarios y clientes que puedan ser recabados por la navegación o contratación de servicios a través del sitio Web TUSPERIFERICOS.com.
+
+En este sentido, el Titular garantiza el cumplimiento de la normativa vigente en materia de protección de datos personales, reflejada en la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y de Garantía de Derechos Digitales (LOPD GDD). Cumple también con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas (RGPD).
+
+El uso de sitio Web implica la aceptación de esta Política de Privacidad así como las condiciones incluidas en el Aviso Legal.
+          </p>
+        </div>
+      </div>
+      </section>
+      </div>
+      
     
   </div>
   <footer>

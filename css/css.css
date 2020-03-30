@@ -46,6 +46,16 @@ footer{
     font-size: 25px;
 }
 
+#price1{
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+#price2{
+    margin-left: 5px;
+    font-size: 25px;
+}
+
 #menu{
     background-color: #34495e;
     padding: 25px;
@@ -98,3 +108,44 @@ h3{
     background-color: #34495e;
     color: white;
 }
+
+.flip {
+    height: 199px;
+    width: 300px;
+    margin: 0 auto;
+}
+.flip img {
+    width: 150px;
+    height: auto;
+}
+.flip .back {
+    background: #34495e;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.flip2 {
+    height: 199px;
+    width: 300px;
+    margin: 0 auto;
+}
+.flip2 img {
+    width: 150px;
+    height: auto;
+}
+.flip2 .back {
+    background: #fff;
+    color: #000000;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.claseprice{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    color: red;
+}
+
+
+
