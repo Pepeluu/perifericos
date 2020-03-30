@@ -5,244 +5,253 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Miriam+Libre&display=swap" rel="stylesheet">
+  <title>TUSPERIFERICOS.COM</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/css.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.css">
-  <title>Responsive Tesla</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="jquery.flip.min.js"></script>
+  <script>
+     $(document).ready(function() {  
+      $(".flip").flip({
+            trigger: 'hover'
+        });
+        $(".flip2").flip({
+        trigger: 'hover',
+        axis: 'x'
+    });
+    $("#titulo").hover(function(){
+		$("#titulo").css("font-family", "Comic Sans MS").css("font-size", "35px");
+		}, function(){
+			$("#titulo").css("font-family" ,"Arial").css("font-size" , "27px");
+		});
+
+    $("#price").hover(function(){
+		$("#price").toggleClass("claseprice");
+		}, function(){
+			$("#price").removeClass("claseprice");
+		});
+
+    $("#price1").hover(function(){
+		$("#price1").toggleClass("claseprice");
+		}, function(){
+			$("#price1").removeClass("claseprice");
+		});
+
+    $("#price2").hover(function(){
+		$("#price2").toggleClass("claseprice");
+		}, function(){
+			$("#price2").removeClass("claseprice");
+		});
+
+    $(".nav-item").hover(function(){
+		$(".nav-item").css("font-family", "Arial").css("font-size", "30px");
+		}, function(){
+			$(".nav-item").css("font-family" ,"Arial").css("font-size" , "14px");
+    });
+    
+    $(".nav-item1").hover(function(){
+		$(".nav-item1").css("font-family", "Arial").css("font-size", "30px");
+		}, function(){
+			$(".nav-item1").css("font-family" ,"Arial").css("font-size" , "14px");
+    });
+    
+    $(".nav-item2").hover(function(){
+		$(".nav-item2").css("font-family", "Arial").css("font-size", "30px");
+		}, function(){
+			$(".nav-item2").css("font-family" ,"Arial").css("font-size" , "14px");
+    });
+    
+    $(".nav-item3").hover(function(){
+		$(".nav-item3").css("font-family", "Arial").css("font-size", "30px");
+		}, function(){
+			$(".nav-item3").css("font-family" ,"Arial").css("font-size" , "14px");
+    });
+    
+    $(".nav-item4").hover(function(){
+		$(".nav-item4").css("font-family", "Arial").css("font-size", "30px");
+		}, function(){
+			$(".nav-item4").css("font-family" ,"Arial").css("font-size" , "14px");
+		});
+
+
+
+   });
+   
+  
+  </script>
 </head>
 
 <body>
-  <!-- NAV  -->
-  <nav class="anchototal">
-    <div class="contenedor-nav">
-
-      <div class="izquierda-nav">
-        <a href="#"><img src="img/logo.png" id="logo">
-          <strong class="nikola"> Nikola Tesla Museum </strong></a>
+  <header>
+    <div class="container-fluid">
+      <div class="col-xs-12 col-sm-3 col-md-1">
+        <img src="img/logo.png" alt="tw" class="img-responsive img-thumbnail tw">
       </div>
-
-      <div class="derecha-nav">
-        <a href="#" class="b"> <i class="fas fa-home"></i></a>
-        <a href="#Exhibition" class="a"> <strong> Exhibition </strong> </a>
-        <a href="#Location" class="a"> <strong> Location </strong> </a>
-        <a href="#Visit" class="a"> <strong> Visit </strong> </a>
-        <a href="#Contact" class="c"> <strong> Contact </strong> </a>
+      <div class="col-xs-12 col-sm-4 col-md-4" id="title">
+        <h2 id="titulo"> TUSPERIFERICOS.COM </h2>
       </div>
-
-    </div>
-  </nav>
-
-
-  <!--  PRESENTACION -->
-
-  <div class="video">
-    <iframe class="header-video" src="https://www.youtube.com/embed/UDmzBJgP5RU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-
-  <div class="video-img">
-    <img src="img/ideas.jpg" class="ideas">
-    <p class="contenedor"><a href="https://www.youtube.com/watch?v=UDmzBJgP5RU" target="_blank">Play video</a></p>
-  </div>
-
-
-
-
-  <article>
-    <!-- HEADER  -->
-    <header>
-      <h1 class="h1-header"><img src="img/logo.png" class="logo-2"><br>
-        <strong class="nikole">Nikola Tesla Museum </strong> </h1>
-    </header>
-
-
-    <!-- EXHIBITION  -->
-    <section id="Exhibition" class="contenedor-ex">
-
-      <h2>Exhibition</h2>
-
-      <div class="flex1">
-        
-
-        <div class="futuro">
-          <div class="bombilla">
-            <img src="img/bombilla.jpg" class="img-bombilla">
-            <p><a href="https://www.youtube.com/watch?v=wyaxh6Nhj5Q" target="_blank" class="video_bombilla">Play video</a></p>
-          </div>
-          <div class="superior1">
-            <iframe class="iframe-superior" src="https://www.youtube.com/embed/wyaxh6Nhj5Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h3>The future is mine</h3>
-          </div>
-          <p class="parrafof1"><a href="https://es.wikipedia.org/wiki/Nikola_Tesla" target="_blank">Nikola Tesla</a> has been called the
-            most important man of the twentieth century. Certainly he contributed more to the field of electricity,
-            radio, and television than any other person living or dead. Ultimately he died alone and impoverished having
-            driven all of his friends away through his neurotic and eccentric behavior. Tesla was never able to fit into
-            the world that he found himself in. This autobiography, originally serialized in Electrical Experimenter, is
-            an intensely fascinating glimpse into the mind of a genius, his inventions, and the magical world in which
-            he lived.</p>
-        </div>
-
-
-        <div class="coleccion">
-          <div class="superior">
-            <img src="img/permanent.jpg" class="permanent">
-            <h3>Collection</h3>
-          </div>
-          <p class="parrafof">The permanent collection, authored by Branimir Jovanovic, PhD, director of the <a
-              href="http://www.tesla-museum.org/web/index.php?l=en" target="_blank">Nikola Tesla Museum</a>, is opened
-            on July 8th 2016. The new concept takes into account the setting solutions from 1955 and 2006, using the
-            best of both and promoting them in the terms of content with the new findings acquired in the meantime. The
-            permanent exhibition is located on the ground floor of the museum building.</p>
-        </div>
-
-
-        <div class="replica">
-          <div class="superior">
-            <img src="img/replica.jpg" class="replicajpg">
-            <h3>Replicas</h3>
-          </div>
-          <p class="parrafof">The <a href="http://www.tesla-museum.org/web/index.php?l=en" target="_blank">Nikola Tesla Museum</a>
-            collection of working models and maquettes, catalogue no. T:21, comprises 54 different exhibits (working
-            models, replicas, maquettes and so on) created as part of the Museum’s work or received as gifts from
-            individuals or institutions. In addition to their primary role of scientifically and professionally
-            presenting Tesla’s life and inventions, certain museum exhibits have acquired the own historical and
-            museological value over time. These are now unique museum items which for a full six decades have evoked the
-            scientist’s ideas and actual inventions for visitors to the Museum.</p>
-        </div>
+      <div class="col-xs-12 col-sm-2 col-md-3" id="descripcion">
+        <h5>TU WEB DE CONFIANZA DONDE ENCONTAR TODOS LOS PERIFERICOS </h5>
       </div>
-      
-
-
-    </section>
-
-
-    <!--  LOCATION  -->
-    <section id="Location" class="anchototal">
-      <h2 class="location">Location</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11323.226189422461!2d20.470734!3d44.805131!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc95e7d097b00ee1a!2sNikola+Tesla+Museum!5e0!3m2!1ses!2ses!4v1515002946061"
-        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </section>
-
-
-    <!-- VISIT  -->
-    <section id="Visit" class="contenedor-es">
-      <h2 class="visit">Visit</h2>
-
-      <div class="flex2">
-        <div class="floor">
-          <div class="superior">
-            <img src="img/plan.gif" class="plan">
-          <h3>Floor Plan</h3> </div>
-          
-          <p class="parrafof">1. Tesla, the man and the creator<br>
-            2. Personal items, correspondence<br>
-            3. The urn containing the ashes<br>
-            4. Tale of electricity<br>
-            5. The polyphase system and its application<br>
-            6. Tesla transformer and its application<br>
-            7. Direct Media-Virtual Reality Headset</p>
-  
-        </div>
-  
-        <div class="tour">
-          <div class="superior">
-            <img src="img/tour.jpg" class="tour">
-            <h3>Tours</h3>
-          </div>
-          <div class="column">
-            <p class="parrafof2">Fee for guided tour in Serbian language: Single Ticket: 250 RSD Group Visit (more than 10 visitors): 150 RSD
-              Students with ISIC (International Student Identity Card): 150 RSD </p>
-            <p class="parrafof2">Fee for guided tour in English language: Single Ticket: 500 RSD Group Visit (more than 10 visitors): 300 RSD
-              Students with ISIC (International Student Identity Card): 300 RSD Children- up to 7 years old- free entrance
-            </p>
-          </div>
-          
-  
-        </div>
-  
-        <div class="publi">
-          <div class="superior">
-            <img src="img/publicacion.jpg" class="publicacion">
-            <h3>Publications</h3>
-          </div>          
-          <p class="parrafof3">The <a href="http://teslacollection.com" target="_blank">Tesla Collection</a> is the most comprehensive
-            compilation of newspaper and periodical material ever assembled by or about Nikola Tesla. The Collection
-            begins on August 14, 1886 and continues through December 11, 1920. Comprising approximately 1,700 separate
-            items totaling more than 4,200 pages, the Collection is drawn from both American and British publications and
-            is reproduced directly from the original English Language material.</p>
-  
-        </div>
-      </div>
-      
-
-    </section>
-
-
-    <!--  CONTACTO  -->
-    <section id="Contact" class="contact">
-      <h2 class="contactoh2">Contact</h2>
-
-      <div class="flex3">
-        <div class="formulario">
-          <p>Do you have a question? We will respond as soon as possible</p>
-          <form action="">
-            
-            First Name<br>
-            <input type="text" name="nombre" class="anchototal1"><br>
-            Last Name<br>
-            <input type="text" name="apellidos" class="anchototal1">
-  
-            <table class="phone-email">
-              <tr>
-                <td>Phone<br>
-                  <input type="tel" name="telefono" class="anchototal2"></td>
-                <td>Email<br>
-                  <input type="email" name="email" class="anchototal2"></td>
-              </tr>
-            </table>
-  
-            Message<br>
-            <textarea name="mensaje" rows="4" class="anchototal3"></textarea><br>
-            <input type="submit">
+      <div class="col-xs-12 col-sm-3 col-md-4">
+        <nav class="navbar navbar-light bg-light" id="navbar">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
           </form>
-        </div>
-  
-        <div class="info">
-          <p><a href="http://www.tesla-museum.org/web/index.php?l=en" target="_blank"> Nikola Tesla Museum</a></p>
-          <p> <i class="fas fa-landmark"></i> Krunska 51, 11000 Beograd, Serbia<br>
-            <i class="far fa-clock"></i> Tuesday to Sunday, 10 am to 8 pm.</p>
-          <p> <i class="fas fa-phone"></i>+381 (0) 11 24 33 886<br>
-            <i class="fas fa-fax"></i>+381 (0) 11 24 36 408<br>
-            <i class="far fa-envelope"></i> info@tesla-museum.org</p>
-          <p>In 2003, in recognition of the universal significance of Nikola Tesla and his inventions, UNESCO added
-            Tesla’s archive, as part of the moveable human documentary heritage, to the Memory of the World Register, the
-            highest form of protection of cultural assets. On the national level, the Parliament of the Republic of
-            Serbia, in 2005, brought a Resolution declaring the archival material preserved in the Nikola Tesla Museum as
-            the Personal Collection of Nikola Tesla to be cultural material of exceptional significance.</p>
-        </div>
+        </nav>
       </div>
-      
+    </div>
+  </header>
+  <div class="container">
+    <section class="main row">
 
+      <aside class="col-xs-12 col-sm-4 col-md-4">
+        <h2 id="menun">Menu</h2>
+        <ul class="nav flex-column" id="menu">
+          <li class="nav-item">
+            <a class="nav-link active " href="teclados.html">Teclados</a>
+          </li>
+          <li class="nav-item1">
+            <a class="nav-link active" href="ratones.html">Ratones</a>
+          </li>
+          <li class="nav-item2">
+            <a class="nav-link active" href="monitores.html">Monitores</a>
+          </li>
+          <li class="nav-item3">
+            <a class="nav-link active" href="altavoces.html">Altavoces</a>
+          </li>
+          <li class="nav-item4">
+            <a class="nav-link active" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </aside>
+      <article class="col-xs-12 col-sm-4 col-md-4 ">
+        <div id="teclado">
+          <h3>Teclado de la semana</h3> 
+          <div class="flip"> 
+            <div class="front"> 
+                <img src="img/rgb.jpg" alt="teclado2" />
+            </div> 
+            <div class="back">
+                <h3>¡TECLADO THANATOS DISPONIBLE, 50 UNIDADES!</h3>
+            </div> 
+        </div>
+          <p id="price"> 105€ </p>
+        </div>
+      </article>
+      <article class="col-xs-12 col-sm-4 col-md-4 ">
+        <p>
+          <h2> Teclado Thanatos </h2>
+          Teclado mecánico sencillo y con un elegante cuerpo de aluminio cepillado. Disponible con tres tipos de
+          switches diferentes (Red, Brown y Blue) y 11 modos diferentes de iluminación. Configuración al vuelo de teclas
+          macro y perfiles de personalización RGB tecla a tecla.
+        </p>
+      </article>
     </section>
-  </article>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 ">
+        <h3>Redes Sociales</h3>
+        <ul class="nav navbar-nav list-inline">
+          <li class="list-inline-item"><a href="mailto:jose.berrio@escuelaestech.es?Subject=Hello%20again"
+              target="_blank"> <img src="img/globo.png" class="tw"> Email </a></li>
+          <li class="list-inline-item"><a href="https://es-es.facebook.com/" target="_blank"> <img
+                src="img/facebook.png" class="tw">
+              Facebook </a></li>
+          <li class="list-inline-item"><a href="https://es.linkedin.com/" target="_blank"> <img src="img/linkedin.png"
+                class="tw">
+              Linkedin </a></li>
+          <li class="list-inline-item"><a href="https://twitter.com/?lang=es" target="_blank"> <img
+                src="img/twitter.png" class="tw">
+              Twitter </a></li>
+          <li class="list-inline-item"><a href="https://www.instagram.com/?hl=es" target="_blank"> <img
+                src="img/instagram.png" class="tw"> Instagram </a></li>
+        </ul>
+      </div>
+      <div class="color1 col-xs-12 col-sm-6 col-md-4 ">
+        <div id="raton">
+          <h3>Raton de la Semana</h3>
+          <div class="flip2"> 
+            <div class="front"> 
+                <img src="img/raton.jpg" alt="raton2" />
+            </div> 
+            <div class="back">
+                <h3>¡RATON MX MASTER, ULTIMAS 5 UNIDADES!</h3>
+            </div> 
+        </div>
+          <p id="price1"> 75€ </p>
+        </div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="contenedor">
-      <div class="izquierda">
-        <a href="#" class="copy"> <strong> Copyright & image licensing </strong> </a>
-        <a href="#" class="privacy"> <strong> Privacy Policy </strong> </a>
-        <a href="#" class="terms"> <strong> Terms of use </strong>  </a>
+        <p>
+          <h2>Logitech MX Master</h2>
+          El ratón inalámbrico MX Master es el ratón estelar de Logitech, diseñado para ofrecer a los usuarios avanzados
+          una comodidad, control y precisión superiores. Ofrece un atractivo diseño contorneado que se adapta a la mano
+          y funciones avanzadas y está optimizado para Windows y Mac. MX Master cuenta con un botón rueda de precisión
+          que cambia automáticamente del desplazamiento clic a clic al rápido, un botón para el pulsar para
+          desplazamiento horizontal y otras funciones, el sensor láser Darkfield para un seguimiento óptimo (incluso
+          sobre cristal) y una batería recargable con una duración de hasta 40 días. El ratón puede conectarse con el
+          receptor Logitech Unifying incluido o mediante tecnología inalámbrica Bluetooth Smart.
+        </p>
       </div>
 
-      <div class="derecha">
-        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="google"><i class="fab fa-google-plus-g"></i></a>
+      <div class="col-xs-12 col-sm-6 col-md-4 ">
+        <div id="monitor">
+          <h3>Monitor de la semana</h3>
+          <div class="flip"> 
+            <div class="front"> 
+                <img src="img/moni.jpg" alt="teclado" />
+            </div> 
+            <div class="back">
+                <h3>¡MONITOR ASUS ROG AGOTADO, PASATE POR NUESTRO CATALOGO!</h3>
+            </div> 
+        </div>
+          <p id="price2"> 375€ </p>
+        </div>
+
+        <p>
+          <h2>ASUS ROG Swift</h2>
+          <ol>
+            <li>Monitor HDR de 27 pulgadas (68.6cm) con resolución 4K UHD (3840 x 2160) y 144 Hz de refresco para jugar
+              en las
+              mejores condiciones posibles.</li>
+            <li>
+              A fin de revelar todos los detalles, NVIDIA G-SYNC HDR produce blancos más brillantes, negros más oscuros,
+              colores precisos y más contraste.
+            </li>
+            <li>
+              Pantalla IPS de punto cuántico con un amplio soporte de la gama cromática DCI-P3. Colores reales y
+              gradaciones
+              más suaves entre tonos.
+            </li>
+            <li>
+              ASUS Aura Sync proporciona iluminación ambiente y permite sincronizar el resto de dispositivos compatibles
+              con
+              Aura Sync.
+            </li>
+          </ol>
+        </p>
       </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container" id="footer">
+      <p>© Copyright Jose Luis® Corporation 2019.
+
+        Materiales bajo licencia - Propiedad de JLBS
+
+        5725-X36 (C) Copyright JLBS Corp. 2019 Reservados todos los derechos.
+
+        Derechos restringidos para los usuarios del gobierno de EE.UU. -- La utilización, duplicación o divulgación
+        están restringidas por el GSA ADP Schedule Contract con JLBS Corp.</p>
     </div>
   </footer>
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
